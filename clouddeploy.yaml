@@ -14,6 +14,6 @@ apiVersion: deploy.cloud.google.com/v1
 kind: Target
 metadata:
  name: qsprod
-description: production cluster
+description: Production Cluster
 gke:
  cluster: projects/gke-tutorial-432017/locations/us-central1/clusters/cluster-1
