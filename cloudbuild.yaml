@@ -5,6 +5,9 @@ steps:
 
   - name: 'gcr.io/cloud-builders/docker'
     args: [ 'build', '-t', 'us-central1-docker.pkg.dev/$PROJECT_ID/my-docker-repo/httpd-image', '.' ]
+    options:
+      logging: CLOUD_LOGGING_ONLY
+
 
 # Step 1
 #push the previously built image to ythe docker repo created in Step 0
